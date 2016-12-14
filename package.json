@@ -1,0 +1,36 @@
+{
+  "author": {
+    "email": "prabodhtiwari@outlook.com",
+    "name": "Prabodh Tiwari"
+  },
+  "bugs": {
+    "url": "https://github.com/prabodhtiwari/browser-details/issues"
+  },
+  "contributors": [],
+  "dependencies": {
+    "crypto-js": "^3.1.8"
+  },
+  "description": "a Javascript library for getting browser, device, and os from user-agent",
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/prabodhtiwari/browser-details",
+  "keywords": [
+    "javascript",
+    "User Agent",
+    "Browser",
+    "OS",
+    "Device"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "maintainers": [],
+  "name": "browser-details",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:prabodhtiwari/browser-details.git",
+    "web": "https://github.com/prabodhtiwari/browser-details"
+  },
+  "version": "0.1.2"
+}

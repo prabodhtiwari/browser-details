@@ -49,4 +49,3 @@ exports.init = () => {
   return {os, device, browser}
 
 }
-  init()

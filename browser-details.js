@@ -33,13 +33,6 @@ const getDevice = (a, browser) => {
       device = 'unknown'
     
   }  
-
-  if(b.length == 2)
-  {
-    device = b[1]
-  } else {
-    device = b[4]
-  }
 }
 
 const getOs = (a) => {
@@ -71,7 +64,7 @@ exports.init = () => {
   const userAgent = window.navigator.userAgent
 
   getBrowser(userAgent)
-  getDevice(userAgent)
+  getDevice(userAgent, browser)
   getOs(userAgent)
   return {os, device, browser}
 

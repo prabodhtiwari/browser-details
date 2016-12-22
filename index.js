@@ -1,6 +1,6 @@
 /*!
  * browser-details
- * Copyright(c) 2013 Prabodh Tiwari <prabodhtiwari@outlook.com>
+ * Copyright(c) 2016 Prabodh Tiwari <prabodhtiwari@outlook.com>
  * MIT Licensed
  */
  

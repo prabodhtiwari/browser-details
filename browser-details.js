@@ -1,8 +1,8 @@
 'use strict'
 
-let os = 'unknown'
-let device = 'unknown'
-let browser = 'unknown'
+var os = 'unknown'
+var device = 'unknown'
+var browser = 'unknown'
 
 const getDevice = (a, browser) => {
 

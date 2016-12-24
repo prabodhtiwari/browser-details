@@ -66,6 +66,10 @@ exports.init = function() {
   getBrowser(userAgent)
   getDevice(userAgent, browser)
   getOs(userAgent)
-  return {os, device, browser}
+  return {
+    "os": os,
+    "device": device,
+    "browser": browser
+  }
 
 }

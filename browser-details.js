@@ -4,7 +4,7 @@ var os = 'unknown'
 var device = 'unknown'
 var browser = 'unknown'
 
-const getDevice = (a, browser) => {
+function getDevice (a, browser) {
 
    var b  = a.split(')')[0].split('(')[1].split(';')
 
@@ -35,7 +35,7 @@ const getDevice = (a, browser) => {
   }  
 }
 
-const getOs = (a) => {
+function getOs (a) {
   if (a.indexOf("Win")!=-1) os="Windows";
   if (a.indexOf("Mac")!=-1) os="MacOS";
   if (a.indexOf("X11")!=-1) os="UNIX";
@@ -49,7 +49,7 @@ const getOs = (a) => {
   if (a.indexOf("Windows Phone")!=-1) os="Windows Phone";
 }
 
-const getBrowser = (a) => { 
+function getBrowser (a)  { 
   if((a.indexOf("Opera") || a.indexOf('OPR')) != -1 ) browser = 'Opera'
   else if(a.indexOf('UCBrowser') != -1) browser = 'UCBrowser'
   else if(a.indexOf("Chrome") != -1 ) browser = 'Chrome'
@@ -59,7 +59,7 @@ const getBrowser = (a) => {
   else if(!!window.indow.StyleMedia) browser = 'Edge'
 }
 
-exports.init = () => {
+exports.init = function() {
 
   const userAgent = window.navigator.userAgent
 

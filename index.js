@@ -4,4 +4,4 @@
  * MIT Licensed
  */
  
-module.exports = require('./browser-details');
+module.exports = require('./bundle.js');

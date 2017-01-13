@@ -29,6 +29,10 @@ function getDevice (a, browser) {
                          device = b[0]
        break
 
+    case "XiaoMi":
+      if(b.length == 4) device = b[3]
+      break
+
     default:
       device = 'unknown'
     
@@ -51,6 +55,7 @@ function getOs (a) {
 
 function getBrowser (a)  { 
   if((a.indexOf("Opera") || a.indexOf('OPR')) != -1 ) browser = 'Opera'
+  else if(a.indexOf('XiaoMi') != -1) browser = 'XiaoMi'
   else if(a.indexOf('UCBrowser') != -1) browser = 'UCBrowser'
   else if(a.indexOf("Chrome") != -1 ) browser = 'Chrome'
   else if(a.indexOf("Safari") != -1) browser = 'Safari'

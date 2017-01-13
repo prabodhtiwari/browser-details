@@ -30,7 +30,7 @@ function getDevice (a, browser) {
        break
 
     case "XiaoMi":
-      if(b.length == 4) device = b[3]
+      if(b.length == 4)  device = b[3]
       break
 
     default:

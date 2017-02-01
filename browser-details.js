@@ -1,12 +1,12 @@
 'use strict'
 
-var os = 'unknown'
-var device = 'unknown'
-var browser = 'unknown'
+let os = 'unknown'
+let device = 'unknown'
+let browser = 'unknown'
 
-function getDevice (a, browser) {
+const getDevice = (a, browser) => {
 
-   var b  = a.split(')')[0].split('(')[1].split(';')
+   const b  = a.split(')')[0].split('(')[1].split(';')
 
   switch(browser){
     case "Chrome":
@@ -30,7 +30,7 @@ function getDevice (a, browser) {
        break
 
     case "XiaoMi":
-      if(b.length == 4)  device = b[3]
+                        device = b[4]
       break
 
     default:
@@ -39,7 +39,7 @@ function getDevice (a, browser) {
   }  
 }
 
-function getOs (a) {
+const getOs = (a) => {
   if (a.indexOf("Win")!=-1) os="Windows";
   if (a.indexOf("Mac")!=-1) os="MacOS";
   if (a.indexOf("X11")!=-1) os="UNIX";
@@ -53,7 +53,7 @@ function getOs (a) {
   if (a.indexOf("Windows Phone")!=-1) os="Windows Phone";
 }
 
-function getBrowser (a)  { 
+const getBrowser =  (a) =>  { 
   if((a.indexOf("Opera") || a.indexOf('OPR')) != -1 ) browser = 'Opera'
   else if(a.indexOf('XiaoMi') != -1) browser = 'XiaoMi'
   else if(a.indexOf('UCBrowser') != -1) browser = 'UCBrowser'
@@ -64,7 +64,7 @@ function getBrowser (a)  {
   else if(!!window.indow.StyleMedia) browser = 'Edge'
 }
 
-exports.init = function() {
+exports.init = () => {
 
   const userAgent = window.navigator.userAgent
 

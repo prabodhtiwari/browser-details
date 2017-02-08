@@ -77,7 +77,7 @@ function getOS (ua) {
   } else if (_ua.indexOf("android") !== -1) {
     os = 'Android';
   } else if (_ua.indexOf("webos") !== -1) {
-    os = 'webOs';
+    os = 'webOS';
   } else if (_ua.indexOf("iphone") !== -1) {
     os = 'iOS';
   } else if (_ua.indexOf("ipad") !== -1) {

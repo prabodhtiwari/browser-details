@@ -13,8 +13,10 @@ npm install browser-details --save
 Modular include:
 
 ```javascript
-var jwt = require("browser-details");
-var info = jwt.init() 
+const browserDetails = require('browser-details');
 ...
-console.log(info);
+/**
+ * @type {{os: string, browser: string, device: string}}
+ */
+const info = browserDetails();
 ```

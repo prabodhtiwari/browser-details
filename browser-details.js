@@ -66,27 +66,27 @@ function getDevice (ua, browser) {
 function getOS (ua) {
   let os = NO_MATCH;
   const _ua = ua.toLowerCase();
-  if (_ua.indexOf("win") !== -1) {
+  if (_ua.indexOf('win') !== -1) {
     os = 'Windows';
-  } else if (_ua.indexOf("mac") !== -1) {
+  } else if (_ua.indexOf('mac') !== -1) {
     os = 'MacOS';
-  } else if (_ua.indexOf("x11") !== -1) {
+  } else if (_ua.indexOf('x11') !== -1) {
     os = 'UNIX';
-  } else if (_ua.indexOf("linux") !== -1) {
+  } else if (_ua.indexOf('linux') !== -1) {
     os = 'Linux';
-  } else if (_ua.indexOf("android") !== -1) {
+  } else if (_ua.indexOf('android') !== -1) {
     os = 'Android';
-  } else if (_ua.indexOf("webos") !== -1) {
+  } else if (_ua.indexOf('webos') !== -1) {
     os = 'webOS';
-  } else if (_ua.indexOf("iphone") !== -1) {
+  } else if (_ua.indexOf('iphone') !== -1) {
     os = 'iOS';
-  } else if (_ua.indexOf("ipad") !== -1) {
+  } else if (_ua.indexOf('ipad') !== -1) {
     os = 'iOS';
-  } else if (_ua.indexOf("ipod") !== -1) {
+  } else if (_ua.indexOf('ipod') !== -1) {
     os = 'iOS';
-  } else if (_ua.indexOf("blackberry") !== -1) {
+  } else if (_ua.indexOf('blackberry') !== -1) {
     os = 'BlackBerry';
-  } else if (_ua.indexOf("windows phone") !== -1) {
+  } else if (_ua.indexOf('windows phone') !== -1) {
     os = 'Windows Phone';
   }
   return os;

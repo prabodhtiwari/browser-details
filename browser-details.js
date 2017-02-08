@@ -97,19 +97,20 @@ function getOS (ua) {
  */
 function getBrowser (ua)  {
   let browser = NO_MATCH;
-  if ((ua.indexOf('Opera') || ua.indexOf('OPR')) !== -1 ) {
+  const _ua = ua.toLowerCase();
+  if ((_ua.indexOf('opera') || _ua.indexOf('opr')) !== -1 ) {
     browser = Browser.Opera;
-  } else if(ua.indexOf('XiaoMi') !== -1) {
+  } else if(_ua.indexOf('xiaomi') !== -1) {
     browser = Browser.Xiaomi;
-  } else if(ua.indexOf('UCBrowser') !== -1) {
+  } else if(_ua.indexOf('ucbrowser') !== -1) {
     browser = Browser.UCBrowser;
-  } else if(ua.indexOf("Chrome") !== -1 ) {
+  } else if(_ua.indexOf('chrome') !== -1 ) {
     browser = Browser.Chrome;
-  } else if(ua.indexOf("Safari") !== -1) {
+  } else if(_ua.indexOf('safari') !== -1 || _ua.indexOf('iphone') || _ua.indexOf('ipad')) {
     browser = Browser.Safari;
-  } else if(ua.indexOf("Firefox") !== -1 ) {
+  } else if(_ua.indexOf('firefox') !== -1 ) {
     browser = Browser.Firefox;
-  } else if((ua.indexOf("MSIE") !== -1 ) || document.documentMode) {
+  } else if((_ua.indexOf('msie') !== -1 ) || document.documentMode) {
     browser = Browser.IE;
   } else if(!!window.styleMedia) {
     browser = Browser.Edge;

@@ -36,7 +36,7 @@
     "url": "git+ssh://git@github.com:prabodhtiwari/browser-details.git",
     "web": "https://github.com/prabodhtiwari/browser-details"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",

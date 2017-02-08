@@ -46,11 +46,8 @@ function getDevice (ua, browser) {
       device = temp[0]; break;
     case Browser.UCBrowser:
       device = temp[4]; break;
-    case Browser.Xiaomi:
-      if (temp.length === 4) {
-        device = temp[3];
-      } else {
-        device = NO_MATCH // Hack
+    case Browser.Xiaomi:{
+        device = temp[4];
       }
       break;
     default:
